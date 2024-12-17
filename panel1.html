@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+   @font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/Vazir-Thin.eot");
+  src: url("fonts/Vazir-Thin.woff") format("woff"),
+    url("fonts/Vazir-Thin.ttf") format("ttf"),
+    url("fonts/Vazir-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Vazir-Light.eot");
+  src: url("fonts/Vazir-Light.woff") format("woff"),
+    url("fonts/Vazir-Light.ttf") format("ttf"),
+    url("fonts/Vazir-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Vazir-Regular.eot");
+  src: url("fonts/Vazir-Regular.woff") format("woff"),
+    url("fonts/Vazir-Regular.ttf") format("ttf"),
+    url("fonts/Vazir-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 950;
+  src: url("fonts/Vazir-Black.eot");
+  src: url("fonts/Vazir-Black.woff") format("woff"),
+    url("fonts/Vazir-Black.ttf") format("ttf"),
+    url("fonts/Vazir-Black.woff2") format("woff2");
+}
+        header {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            width: 100px; /* Adjust the size of the logo */
+            height: auto;
+            margin-right: 10px; /* Space between logo and title */
+        }
+    
+    
+        .my-button {
+            font-size: 20px; /* Change font size */
+            font-family: vazir; /* Change font type */
+            background-color: yellow ; 
+            color: darkblue;
+            border-radius: 10px;
+            cursor: pointer; /* Change cursor on hover */
+        }
+          .my-button1 {
+            font-size: 20px; /* Change font size */
+            font-family: vazir; /* Change font type */
+            background-color: green ; 
+            color: yellow;
+            border-radius: 10px;
+            cursor: pointer; /* Change cursor on hover */
+        }
+        .my-button1:hover {
+            background-color: darkblue; /* Color on hover */
+            color: yellow;
+        }
+
+        .my-button:hover {
+            background-color: darkblue; /* Color on hover */
+            color: yellow;
+        }
+     body {
+    font-family: vazir;
+      }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo"> <!-- Replace with your logo URL -->
+        <h2>Sublinks for panel1<br /> 
+             panel1 لینک پنل برای 
+           </h2>
+    </header>
+  <br />
+  <a href="hiddify://import/https://raw.githubusercontent.com/amehri/sublinks/refs/heads/main/panel1.txt?token=GHSAT0AAAAAAC4A6MXWWJQDYGCJC6U7SAXEZ3BI5EQ">
+      <button class="my-button"> Hiddify Sublink- پنل هیدیفای</button>
+  </a>    
+  
+  <br />
+  <br />
+  <a href="streisand://import/https://raw.githubusercontent.com/amehri/sublinks/refs/heads/main/panel1.txt?token=GHSAT0AAAAAAC4A6MXWWJQDYGCJC6U7SAXEZ3BI5EQ">
+      <button class="my-button"> Streisand Sublink IOS- کانفیگ استریسند</button>
+  </a>  
+  
+  <br />
+  <br />
+
+<textarea rows='10' cols='80' id='userValue' hidden= "True" >nnnn</textarea>
+
+<div class="tooltip">
+<button class="my-button" onclick="myFunction()"  onmouseout="outFunc()">  
+   <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+   Copy configs - کپی کردن کانفیگ ها
+  </button>
+</div>
+
+<script>
+  
+ function IO(U) {
+ var X = !window.XMLHttpRequest ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
+ X.open('GET', U, false );
+ X.setRequestHeader('Content-Type', 'text')
+ X.send('');
+ return X.responseText;
+ } 
+ 
+ function doLoad(){
+  // document.getElementById("userValue").value = "doload func";
+ document.getElementById("userValue").value = IO("https://raw.githubusercontent.com/amehri/sublinks/refs/heads/main/panel1.txt?token=GHSAT0AAAAAAC4A6MXWWJQDYGCJC6U7SAXEZ3BI5EQ"); 
+ }
+  
+function myFunction1() {
+  var copyText= document.getElementById("userValue");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied to clipboard";
+}
+
+function outFunc() {
+//   var tooltip = document.getElementById("myTooltip");
+  // tooltip.innerHTML = "Copy to clipboard";
+}
+
+function myFunction(){
+  doLoad();
+  //document.getElementById("userValue").value ="second step";
+  myFunction1();
+}
+  
+</script>
+   
+
+  <br />
+  <br />
+
+<h3>
+  -software Links-لینک دانلود نرم افزار-
+  </h3>
+
+  <a href="https://github.com/hiddify/hiddify-next/releases/latest">
+      <button class="my-button1">Hiddify App Page- صفحه دانلود نرم افزار هیدیفای اندروید و ویندوز</button>
+  </a>  
+  
+  <br />
+  <br />
+
+ <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532">
+      <button class="my-button1">Hiddify App Page- صفحه دانلود نرم افزار هیدیفای آیفون </button>
+  </a>  
+  
+  <br />
+  <br />
+
+  
+    <a href="https://apps.apple.com/us/app/streisand/id6450534064">
+      <button class="my-button1">Streisand App Page- صفحه دانلود نرم افزار استریسند</button>
+  </a>  
+
+  
+</body>
+</html>
+

@@ -165,7 +165,7 @@
       },
       "tag": "💦 1 - VLESS - Domain : 443",
       "tls_fragment": {
-        "enabled": true,
+        "enabled": false,
         "size": "100-200",
         "sleep": "1-1"
       }
@@ -199,7 +199,7 @@
       },
       "tag": "💦 2 - VLESS - Domain : 443",
       "tls_fragment": {
-        "enabled": true,
+        "enabled": false,
         "size": "100-200",
         "sleep": "1-1"
       }
@@ -234,8 +234,8 @@
       "tag": "💦 3 - VLESS - Domain : 443",
       "tls_fragment": {
         "enabled": true,
-        "size": "100-200",
-        "sleep": "1-1"
+        "size": "10-20",
+        "sleep": "10-20"
       }
     },
     {
@@ -268,8 +268,8 @@
       "tag": "💦 4 - VLESS - Domain : 443",
       "tls_fragment": {
         "enabled": true,
-        "size": "100-200",
-        "sleep": "1-1"
+        "size":"10-20",
+        "sleep": "10-20"
       }
     },
     {
@@ -301,9 +301,9 @@
       },
       "tag": "💦 5 - VLESS - Domain : 443",
       "tls_fragment": {
-        "enabled": true,
-        "size": "100-200",
-        "sleep": "1-1"
+        "enabled": false,
+        "size": "10-20",
+        "sleep": "10-20"
       }
     },
     {
@@ -335,7 +335,7 @@
       },
       "tag": "💦 6 - VLESS - Domain : 443",
       "tls_fragment": {
-        "enabled": true,
+        "enabled": false,
         "size": "100-200",
         "sleep": "1-1"
       }

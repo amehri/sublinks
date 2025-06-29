@@ -164,12 +164,7 @@
         "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
         "type": "ws"
       },
-      "tag": "💦 1 - VLESS - Domain : 443",
-      "tls_fragment": {
-        "enabled": false,
-        "size": "100-200",
-        "sleep": "1-1"
-      }
+      "tag": "💦 1 - VLESS - Domain : 443"
     },
     {
       "type": "vless",

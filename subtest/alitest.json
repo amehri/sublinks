@@ -202,6 +202,24 @@
         }
       },
       {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
+        "streamSettings": {
+          "sockopt": {
+            "tcpNoDelay": true,
+            "tcpKeepAliveIdle": 100
+          }
+        }
+      },
+      {
         "tag": "direct",
         "protocol": "freedom",
         "settings": {}
@@ -345,6 +363,16 @@
         }
       },
       {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -490,7 +518,17 @@
         }
       },
       {
-         "streamSettings": {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
+        "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -640,7 +678,17 @@
         }
       },
       {
-          "streamSettings": {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
+        "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -789,7 +837,17 @@
         }
       },
       {
-          "streamSettings": {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
+        "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -937,7 +995,17 @@
         }
       },
       {
-          "streamSettings": {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
+        "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -1087,7 +1155,17 @@
         }
       },
       {
-          "streamSettings": {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
+        "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -1231,7 +1309,17 @@
         }
       },
       {
-          "streamSettings": {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
+        "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -1380,7 +1468,17 @@
         }
       },
       {
-          "streamSettings": {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
+        "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -1531,7 +1629,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -1677,7 +1784,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -1828,7 +1944,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -1978,7 +2103,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2127,7 +2261,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2278,7 +2421,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2423,7 +2575,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2573,7 +2734,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2707,7 +2877,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2841,7 +3020,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2971,7 +3159,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -3101,7 +3298,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -5881,7 +6087,16 @@
         }
       },
       {
-       
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6027,7 +6242,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6178,7 +6402,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6328,7 +6561,16 @@
         }
       },
       {
-       
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6477,7 +6719,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6628,7 +6879,16 @@
         }
       },
       {
-       
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6773,7 +7033,16 @@
         }
       },
       {
-       
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6923,7 +7192,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7075,7 +7353,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7221,7 +7508,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7372,7 +7668,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7522,7 +7827,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7671,7 +7985,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7822,7 +8145,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7967,7 +8299,16 @@
         }
       },
       {
-       
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -8117,7 +8458,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -8247,7 +8597,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -8377,7 +8736,16 @@
         }
       },
       {
-        
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "fragment": {
+            "packets": "tlshello",
+            "length": "10-20",
+            "interval": "10-20"
+          }
+        },
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,

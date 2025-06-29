@@ -1,0 +1,1061 @@
+{
+  "dns": {
+    "final": "local-dns",
+    "rules": [
+      {
+        "clash_mode": "Global",
+        "server": "proxy-dns",
+        "source_ip_cidr": [
+          "172.19.0.0/30"
+        ]
+      },
+      {
+        "server": "proxy-dns",
+        "source_ip_cidr": [
+          "172.19.0.0/30"
+        ]
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "direct-dns"
+      }
+    ],
+    "servers": [
+      {
+        "address": "tls://208.67.222.123",
+        "address_resolver": "local-dns",
+        "detour": "proxy",
+        "tag": "proxy-dns"
+      },
+      {
+        "address": "local",
+        "detour": "direct",
+        "tag": "local-dns"
+      },
+      {
+        "address": "rcode://success",
+        "tag": "block"
+      },
+      {
+        "address": "local",
+        "detour": "direct",
+        "tag": "direct-dns"
+      }
+    ],
+    "strategy": "prefer_ipv4"
+  },
+  "inbounds": [
+    {
+      "address": [
+        "172.19.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "endpoint_independent_nat": false,
+      "mtu": 9000,
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 2080
+        }
+      },
+      "sniff": true,
+      "stack": "system",
+      "strict_route": false,
+      "type": "tun"
+    },
+    {
+      "listen": "127.0.0.1",
+      "listen_port": 2080,
+      "sniff": true,
+      "type": "mixed",
+      "users": []
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "vless-ca8ea1d5",
+        "vless-30dfa636",
+        "trojan-fd057431",
+        "vmess-fce2da1c",
+        "vless-5e1d3b15",
+        "vmess-0c391ec6",
+        "vless-1f998cb8",
+        "trojan-ea8ac05f",
+        "vmess-404590e8",
+        "vless-9fd2e91c",
+        "trojan-02f1381f",
+        "vmess-7823969b",
+        "vless-d40452ff",
+        "vmess-c3c1381b",
+        "vless-2b21bb0a",
+        "trojan-fa4fd53d",
+        "vmess-f54376ab",
+        "hysteria2-0fad7384",
+        "vless-737ffd15",
+        "trojan-2b981aef",
+        "vmess-94484ff6",
+        "vless-bae9c682",
+        "vmess-5a353e25",
+        "vless-2b74ca95",
+        "trojan-c155ca01",
+        "vmess-6b620f4c",
+        "vless-313d3b89",
+        "trojan-ac297c8c",
+        "vmess-a8ba866c",
+        "vless-ed78d181",
+        "vmess-22180990",
+        "vless-6fce94e8",
+        "trojan-53e83b56",
+        "vmess-7d1fcf6f",
+        "vless-a9647fcf",
+        "trojan-229f2b03",
+        "vmess-894ed9f8",
+        "vless-a60aee49",
+        "vmess-1ef000a6",
+        "vless-f3389024",
+        "trojan-53c03d25",
+        "vmess-c984851c",
+        "vless-c17ec8a4",
+        "trojan-3aa4f834",
+        "vmess-2e998ece",
+        "vless-2bcc1a81",
+        "vmess-a68876a9",
+        "vless-bf5d4558",
+        "trojan-d1d8bb1b",
+        "vmess-4cb998b9",
+        "hysteria2-03ccf7f7",
+        "direct"
+      ]
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "outbounds": [
+        "vless-ca8ea1d5",
+        "vless-30dfa636",
+        "trojan-fd057431",
+        "vmess-fce2da1c",
+        "vless-5e1d3b15",
+        "vmess-0c391ec6",
+        "vless-1f998cb8",
+        "trojan-ea8ac05f",
+        "vmess-404590e8",
+        "vless-9fd2e91c",
+        "trojan-02f1381f",
+        "vmess-7823969b",
+        "vless-d40452ff",
+        "vmess-c3c1381b",
+        "vless-2b21bb0a",
+        "trojan-fa4fd53d",
+        "vmess-f54376ab",
+        "hysteria2-0fad7384",
+        "vless-737ffd15",
+        "trojan-2b981aef",
+        "vmess-94484ff6",
+        "vless-bae9c682",
+        "vmess-5a353e25",
+        "vless-2b74ca95",
+        "trojan-c155ca01",
+        "vmess-6b620f4c",
+        "vless-313d3b89",
+        "trojan-ac297c8c",
+        "vmess-a8ba866c",
+        "vless-ed78d181",
+        "vmess-22180990",
+        "vless-6fce94e8",
+        "trojan-53e83b56",
+        "vmess-7d1fcf6f",
+        "vless-a9647fcf",
+        "trojan-229f2b03",
+        "vmess-894ed9f8",
+        "vless-a60aee49",
+        "vmess-1ef000a6",
+        "vless-f3389024",
+        "trojan-53c03d25",
+        "vmess-c984851c",
+        "vless-c17ec8a4",
+        "trojan-3aa4f834",
+        "vmess-2e998ece",
+        "vless-2bcc1a81",
+        "vmess-a68876a9",
+        "vless-bf5d4558",
+        "trojan-d1d8bb1b",
+        "vmess-4cb998b9",
+        "hysteria2-03ccf7f7"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "type": "vless",
+      "tag": "vless-ca8ea1d5",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "xtls-rprx-vision",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "api.github.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-30dfa636",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "headers": {
+          "Host": "mixin.kacharhydraulic.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-fd057431",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {
+        "path": "/f0yhq5kRMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-fce2da1c",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
+        "headers": {
+          "Host": "mixin.kacharhydraulic.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixin.kacharhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-5e1d3b15",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-0c391ec6",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixin.kacharhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1f998cb8",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-ea8ac05f",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-404590e8",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixin.kacharhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-9fd2e91c",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "headers": {
+          "Host": "mixin.kacharhydraulic.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-02f1381f",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {
+        "path": "/f0yhq5kRMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-7823969b",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
+        "headers": {
+          "Host": "mixin.kacharhydraulic.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixin.kacharhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-d40452ff",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-c3c1381b",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixin.kacharhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-2b21bb0a",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-fa4fd53d",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-f54376ab",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixin.kacharhydraulic.ir"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-0fad7384",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 40648,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "tls": {
+        "enabled": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-737ffd15",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "headers": {
+          "Host": "mixinc.maintaincourse.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-2b981aef",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {
+        "path": "/f0yhq5kRMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-94484ff6",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
+        "headers": {
+          "Host": "mixinc.maintaincourse.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixinc.maintaincourse.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-bae9c682",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-5a353e25",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixinc.maintaincourse.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-2b74ca95",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-c155ca01",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-6b620f4c",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixinc.maintaincourse.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-313d3b89",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "headers": {
+          "Host": "mixinc.maintaincourse.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-ac297c8c",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {
+        "path": "/f0yhq5kRMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-a8ba866c",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
+        "headers": {
+          "Host": "mixinc.maintaincourse.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixinc.maintaincourse.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-ed78d181",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-22180990",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixinc.maintaincourse.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-6fce94e8",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-53e83b56",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-7d1fcf6f",
+      "server": "vinted.fr",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixinc.maintaincourse.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-a9647fcf",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "headers": {
+          "Host": "mixind.maintainhydraulic.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-229f2b03",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {
+        "path": "/f0yhq5kRMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-894ed9f8",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
+        "headers": {
+          "Host": "mixind.maintainhydraulic.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixind.maintainhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-a60aee49",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-1ef000a6",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixind.maintainhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-f3389024",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-53c03d25",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-c984851c",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixind.maintainhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-c17ec8a4",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "headers": {
+          "Host": "mixind.maintainhydraulic.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-3aa4f834",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {
+        "path": "/f0yhq5kRMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-2e998ece",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
+        "headers": {
+          "Host": "mixind.maintainhydraulic.ir"
+        },
+        "type": "ws"
+      },
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixind.maintainhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-2bcc1a81",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-a68876a9",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixind.maintainhydraulic.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-bf5d4558",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "flow": "",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-d1d8bb1b",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-4cb998b9",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "uuid": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {},
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixind.maintainhydraulic.ir"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-03ccf7f7",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 40650,
+      "password": "2ba2c41c-b11b-40a0-a50c-e114dd05bf43",
+      "tls": {
+        "enabled": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "insecure": true
+      }
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "final": "proxy",
+    "rules": [
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "proxy"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      }
+    ]
+  }
+}

@@ -148,7 +148,7 @@
           "h2"
         ],
         "enabled": true,
-        "insecure": true,
+        "insecure": false,
         "server_name": "mixin.kacharhydraulic.ir",
         "utls": {
           "enabled": true,
@@ -165,11 +165,6 @@
         "type": "ws"
       },
       "tag": "💦 1 - VLESS - Domain : 443",
-      "tls_fragment": {
-        "enabled": false,
-        "size": "100-200",
-        "sleep": "1-1"
-      }
     },
     {
       "type": "vless",

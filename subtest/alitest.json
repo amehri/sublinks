@@ -128,7 +128,12 @@
       "tag": "✅ Selector",
       "outbounds": [
         "💦 Best Ping 💥",
-        "💦 1 - VLESS - Domain : 443"
+        "💦 1 - VLESS - Domain : 443",
+        "💦 2 - VLESS - Domain : 443",
+        "💦 3 - VLESS - Domain : 443",
+        "💦 4 - VLESS - Domain : 443",
+        "💦 5 - VLESS - Domain : 443",
+        "💦 6 - VLESS - Domain : 443"
       ]
     },
     {
@@ -136,7 +141,7 @@
       "server": "mixin.kacharhydraulic.ir",
       "server_port": 443,
       "domain_strategy": "ipv4_only",
-      "uuid": "",
+      "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
       "tls": {
         "alpn": [
           "h2"
@@ -158,13 +163,193 @@
         "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
         "type": "ws"
       },
-      "tag": "💦 1 - VLESS - Domain : 443"
-          },
+      "tag": "💦 1 - VLESS - Domain : 443",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "100-200",
+        "sleep": "1-1"
+      }
+    },
+    {
+      "type": "vless",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "domain_strategy": "ipv4_only",
+      "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
+      "tls": {
+        "alpn": [
+          "http/1.1"
+        ],
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "headers": {
+          "Host": "mixin.kacharhydraulic.ir"
+        },
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tag": "💦 2 - VLESS - Domain : 443",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "100-200",
+        "sleep": "1-1"
+      }
+    },
+    {
+      "type": "vless",
+      "server": "mixinc.maintaincourse.ir",
+      "server_port": 443,
+      "domain_strategy": "ipv4_only",
+      "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
+      "tls": {
+        "alpn": [
+          "h2"
+        ],
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "headers": {
+          "Host": "mixinc.maintaincourse.ir"
+        },
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tag": "💦 3 - VLESS - Domain : 443",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "100-200",
+        "sleep": "1-1"
+      }
+    },
+    {
+      "type": "vless",
+      "server": "mixinc.maintaincourse.ir",
+      "server_port": 443,
+      "domain_strategy": "ipv4_only",
+      "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
+      "tls": {
+        "alpn": [
+          "http/1.1"
+        ],
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixinc.maintaincourse.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "headers": {
+          "Host": "mixinc.maintaincourse.ir"
+        },
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tag": "💦 4 - VLESS - Domain : 443",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "100-200",
+        "sleep": "1-1"
+      }
+    },
+    {
+      "type": "vless",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "domain_strategy": "ipv4_only",
+      "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
+      "tls": {
+        "alpn": [
+          "h2"
+        ],
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "headers": {
+          "Host": "mixind.maintainhydraulic.ir"
+        },
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tag": "💦 5 - VLESS - Domain : 443",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "100-200",
+        "sleep": "1-1"
+      }
+    },
+    {
+      "type": "vless",
+      "server": "mixind.maintainhydraulic.ir",
+      "server_port": 443,
+      "domain_strategy": "ipv4_only",
+      "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
+      "tls": {
+        "alpn": [
+          "http/1.1"
+        ],
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixind.maintainhydraulic.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "headers": {
+          "Host": "mixind.maintainhydraulic.ir"
+        },
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tag": "💦 6 - VLESS - Domain : 443",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "100-200",
+        "sleep": "1-1"
+      }
+    },
     {
       "type": "urltest",
       "tag": "💦 Best Ping 💥",
       "outbounds": [
-        "💦 1 - VLESS - Domain : 443"
+        "💦 1 - VLESS - Domain : 443",
+        "💦 2 - VLESS - Domain : 443",
+        "💦 3 - VLESS - Domain : 443",
+        "💦 4 - VLESS - Domain : 443",
+        "💦 5 - VLESS - Domain : 443",
+        "💦 6 - VLESS - Domain : 443"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "30s"

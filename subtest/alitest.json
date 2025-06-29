@@ -1,1778 +1,353 @@
 {
-    "outbounds": [
-        {
-            "type": "selector",
-            "tag": "Select",
-            "outbounds": [
-                "Auto",
-                "r1 reality XTLS direct vless \u00a7 443 2",
-                "d1 tls_h2 WS direct vless \u00a7 443 3",
-                "d1 tls_h2 WS direct trojan \u00a7 443 3",
-                "d1 tls_h2 WS direct vmess \u00a7 443 3",
-                "d1 tls_h2 httpupgrade direct vless \u00a7 443 3",
-                "d1 tls_h2 httpupgrade direct vmess \u00a7 443 3",
-                "d1 tls_h2 grpc direct vless \u00a7 443 3",
-                "d1 tls_h2 grpc direct trojan \u00a7 443 3",
-                "d1 tls_h2 grpc direct vmess \u00a7 443 3",
-                "d1 tls WS direct vless \u00a7 443 3",
-                "d1 tls WS direct trojan \u00a7 443 3",
-                "d1 tls WS direct vmess \u00a7 443 3",
-                "d1 tls httpupgrade direct vless \u00a7 443 3",
-                "d1 tls httpupgrade direct vmess \u00a7 443 3",
-                "d1 tls grpc direct vless \u00a7 443 3",
-                "d1 tls grpc direct trojan \u00a7 443 3",
-                "d1 tls grpc direct vmess \u00a7 443 3",
-                "d1 ShadowSocks2022 \u00a7 55400 3",
-                "d1 ShadowTLS \u00a7 443 3",
-                "d1 TUIC \u00a7 53932 3",
-                "d1 Hysteria2 \u00a7 40648 3",
-                "c1 tls_h2 WS CDN vless \u00a7 443 4",
-                "c1 tls_h2 WS CDN trojan \u00a7 443 4",
-                "c1 tls_h2 WS CDN vmess \u00a7 443 4",
-                "c1 tls_h2 httpupgrade CDN vless \u00a7 443 4",
-                "c1 tls_h2 httpupgrade CDN vmess \u00a7 443 4",
-                "c1 tls_h2 grpc CDN vless \u00a7 443 4",
-                "c1 tls_h2 grpc CDN trojan \u00a7 443 4",
-                "c1 tls_h2 grpc CDN vmess \u00a7 443 4",
-                "c1 tls WS CDN vless \u00a7 443 4",
-                "c1 tls WS CDN trojan \u00a7 443 4",
-                "c1 tls WS CDN vmess \u00a7 443 4",
-                "c1 tls httpupgrade CDN vless \u00a7 443 4",
-                "c1 tls httpupgrade CDN vmess \u00a7 443 4",
-                "c1 tls grpc CDN vless \u00a7 443 4",
-                "c1 tls grpc CDN trojan \u00a7 443 4",
-                "c1 tls grpc CDN vmess \u00a7 443 4",
-                "d2 tls_h2 WS direct vless \u00a7 443 5",
-                "d2 tls_h2 WS direct trojan \u00a7 443 5",
-                "d2 tls_h2 WS direct vmess \u00a7 443 5",
-                "d2 tls_h2 httpupgrade direct vless \u00a7 443 5",
-                "d2 tls_h2 httpupgrade direct vmess \u00a7 443 5",
-                "d2 tls_h2 grpc direct vless \u00a7 443 5",
-                "d2 tls_h2 grpc direct trojan \u00a7 443 5",
-                "d2 tls_h2 grpc direct vmess \u00a7 443 5",
-                "d2 tls WS direct vless \u00a7 443 5",
-                "d2 tls WS direct trojan \u00a7 443 5",
-                "d2 tls WS direct vmess \u00a7 443 5",
-                "d2 tls httpupgrade direct vless \u00a7 443 5",
-                "d2 tls httpupgrade direct vmess \u00a7 443 5",
-                "d2 tls grpc direct vless \u00a7 443 5",
-                "d2 tls grpc direct trojan \u00a7 443 5",
-                "d2 tls grpc direct vmess \u00a7 443 5",
-                "d2 TUIC \u00a7 53934 5",
-                "d2 Hysteria2 \u00a7 40650 5"
-            ],
-            "default": "Auto"
-        },
-        {
-            "type": "urltest",
-            "tag": "Auto",
-            "outbounds": [
-                "r1 reality XTLS direct vless \u00a7 443 2",
-                "d1 tls_h2 WS direct vless \u00a7 443 3",
-                "d1 tls_h2 WS direct trojan \u00a7 443 3",
-                "d1 tls_h2 WS direct vmess \u00a7 443 3",
-                "d1 tls_h2 httpupgrade direct vless \u00a7 443 3",
-                "d1 tls_h2 httpupgrade direct vmess \u00a7 443 3",
-                "d1 tls_h2 grpc direct vless \u00a7 443 3",
-                "d1 tls_h2 grpc direct trojan \u00a7 443 3",
-                "d1 tls_h2 grpc direct vmess \u00a7 443 3",
-                "d1 tls WS direct vless \u00a7 443 3",
-                "d1 tls WS direct trojan \u00a7 443 3",
-                "d1 tls WS direct vmess \u00a7 443 3",
-                "d1 tls httpupgrade direct vless \u00a7 443 3",
-                "d1 tls httpupgrade direct vmess \u00a7 443 3",
-                "d1 tls grpc direct vless \u00a7 443 3",
-                "d1 tls grpc direct trojan \u00a7 443 3",
-                "d1 tls grpc direct vmess \u00a7 443 3",
-                "d1 ShadowSocks2022 \u00a7 55400 3",
-                "d1 ShadowTLS \u00a7 443 3",
-                "d1 ShadowTLS \u00a7 443 3_shadowtls-out \u00a7hide\u00a7",
-                "d1 TUIC \u00a7 53932 3",
-                "d1 Hysteria2 \u00a7 40648 3",
-                "c1 tls_h2 WS CDN vless \u00a7 443 4",
-                "c1 tls_h2 WS CDN trojan \u00a7 443 4",
-                "c1 tls_h2 WS CDN vmess \u00a7 443 4",
-                "c1 tls_h2 httpupgrade CDN vless \u00a7 443 4",
-                "c1 tls_h2 httpupgrade CDN vmess \u00a7 443 4",
-                "c1 tls_h2 grpc CDN vless \u00a7 443 4",
-                "c1 tls_h2 grpc CDN trojan \u00a7 443 4",
-                "c1 tls_h2 grpc CDN vmess \u00a7 443 4",
-                "c1 tls WS CDN vless \u00a7 443 4",
-                "c1 tls WS CDN trojan \u00a7 443 4",
-                "c1 tls WS CDN vmess \u00a7 443 4",
-                "c1 tls httpupgrade CDN vless \u00a7 443 4",
-                "c1 tls httpupgrade CDN vmess \u00a7 443 4",
-                "c1 tls grpc CDN vless \u00a7 443 4",
-                "c1 tls grpc CDN trojan \u00a7 443 4",
-                "c1 tls grpc CDN vmess \u00a7 443 4",
-                "d2 tls_h2 WS direct vless \u00a7 443 5",
-                "d2 tls_h2 WS direct trojan \u00a7 443 5",
-                "d2 tls_h2 WS direct vmess \u00a7 443 5",
-                "d2 tls_h2 httpupgrade direct vless \u00a7 443 5",
-                "d2 tls_h2 httpupgrade direct vmess \u00a7 443 5",
-                "d2 tls_h2 grpc direct vless \u00a7 443 5",
-                "d2 tls_h2 grpc direct trojan \u00a7 443 5",
-                "d2 tls_h2 grpc direct vmess \u00a7 443 5",
-                "d2 tls WS direct vless \u00a7 443 5",
-                "d2 tls WS direct trojan \u00a7 443 5",
-                "d2 tls WS direct vmess \u00a7 443 5",
-                "d2 tls httpupgrade direct vless \u00a7 443 5",
-                "d2 tls httpupgrade direct vmess \u00a7 443 5",
-                "d2 tls grpc direct vless \u00a7 443 5",
-                "d2 tls grpc direct trojan \u00a7 443 5",
-                "d2 tls grpc direct vmess \u00a7 443 5",
-                "d2 TUIC \u00a7 53934 5",
-                "d2 Hysteria2 \u00a7 40650 5"
-            ],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "10m",
-            "tolerance": 200
-        },
-        {
-            "tag": "direct",
-            "type": "direct"
-        },
-        {
-            "tag": "bypass",
-            "type": "direct"
-        },
-        {
-            "tag": "block",
-            "type": "block"
-        },
-        {
-            "tag": "dns-out",
-            "type": "dns"
-        },
-        {
-            "tag": "r1 reality XTLS direct vless \u00a7 443 2",
-            "type": "vless",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "api.github.com",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "U2-Qs8sGA9SJG-sqSii5LdhxOEUklLgibCZC4f-qRWM",
-                    "short_id": "5c8c9f56"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "d1 tls_h2 WS direct vless \u00a7 443 3",
-            "type": "vless",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls_h2 WS direct trojan \u00a7 443 3",
-            "type": "trojan",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/f0yhq5kRMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls_h2 WS direct vmess \u00a7 443 3",
-            "type": "vmess",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls_h2 httpupgrade direct vless \u00a7 443 3",
-            "type": "vless",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/dKRk8uY7Uau6bn1gtnEzw",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls_h2 httpupgrade direct vmess \u00a7 443 3",
-            "type": "vmess",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/3wVDrZYnkwx5n1gtnEzw",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls_h2 grpc direct vless \u00a7 443 3",
-            "type": "vless",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "dKRk8uY7Uau6bz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d1 tls_h2 grpc direct trojan \u00a7 443 3",
-            "type": "trojan",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "f0yhq5kRz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d1 tls_h2 grpc direct vmess \u00a7 443 3",
-            "type": "vmess",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "3wVDrZYnkwx5z3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d1 tls WS direct vless \u00a7 443 3",
-            "type": "vless",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls WS direct trojan \u00a7 443 3",
-            "type": "trojan",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/f0yhq5kRMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls WS direct vmess \u00a7 443 3",
-            "type": "vmess",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls httpupgrade direct vless \u00a7 443 3",
-            "type": "vless",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/dKRk8uY7Uau6bn1gtnEzw",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls httpupgrade direct vmess \u00a7 443 3",
-            "type": "vmess",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/3wVDrZYnkwx5n1gtnEzw",
-                "headers": {
-                    "Host": "mixin.kacharhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d1 tls grpc direct vless \u00a7 443 3",
-            "type": "vless",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "dKRk8uY7Uau6bz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d1 tls grpc direct trojan \u00a7 443 3",
-            "type": "trojan",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "f0yhq5kRz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d1 tls grpc direct vmess \u00a7 443 3",
-            "type": "vmess",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "3wVDrZYnkwx5z3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d1 ShadowSocks2022 \u00a7 55400 3",
-            "type": "shadowsocks",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 55400,
-            "method": "2022-blake3-aes-256-gcm",
-            "password": "YzQ5MDdkMGZmZTZmNDgwNTkxM2U5ZmM3MjczNjdlMDk=:NGJlMGQ2MDFhNDliNDZlZjlmYzEyYTdmMGMzYzIzYjY=",
-            "udp_over_tcp": {
-                "enabled": true,
-                "version": 2
-            }
-        },
-        {
-            "tag": "d1 ShadowTLS \u00a7 443 3",
-            "type": "shadowsocks",
-            "method": "2022-blake3-aes-256-gcm",
-            "password": "YzQ5MDdkMGZmZTZmNDgwNTkxM2U5ZmM3MjczNjdlMDk=:NGJlMGQ2MDFhNDliNDZlZjlmYzEyYTdmMGMzYzIzYjY=",
-            "udp_over_tcp": {
-                "enabled": true,
-                "version": 2
-            },
-            "detour": "d1 ShadowTLS \u00a7 443 3_shadowtls-out \u00a7hide\u00a7"
-        },
-        {
-            "type": "shadowtls",
-            "tag": "d1 ShadowTLS \u00a7 443 3_shadowtls-out \u00a7hide\u00a7",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 443,
-            "version": 3,
-            "password": "c4907d0f-fe6f-4805-913e-9fc727367e09",
-            "tls": {
-                "enabled": true,
-                "server_name": "archive.org",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "d1 TUIC \u00a7 53932 3",
-            "type": "tuic",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 53932,
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "congestion_control": "cubic",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": true,
-            "heartbeat": "10s",
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6"
-        },
-        {
-            "tag": "d1 Hysteria2 \u00a7 40648 3",
-            "type": "hysteria2",
-            "server": "mixin.kacharhydraulic.ir",
-            "server_port": 40648,
-            "tls": {
-                "enabled": true,
-                "server_name": "mixin.kacharhydraulic.ir",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "up_mbps": null,
-            "down_mbps": null,
-            "obfs": {
-                "type": "salamander",
-                "password": "zkH8BZbQmhOkAug"
-            },
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6"
-        },
-        {
-            "tag": "c1 tls_h2 WS CDN vless \u00a7 443 4",
-            "type": "vless",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls_h2 WS CDN trojan \u00a7 443 4",
-            "type": "trojan",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/f0yhq5kRMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls_h2 WS CDN vmess \u00a7 443 4",
-            "type": "vmess",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls_h2 httpupgrade CDN vless \u00a7 443 4",
-            "type": "vless",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/dKRk8uY7Uau6bn1gtnEzw",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls_h2 httpupgrade CDN vmess \u00a7 443 4",
-            "type": "vmess",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/3wVDrZYnkwx5n1gtnEzw",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls_h2 grpc CDN vless \u00a7 443 4",
-            "type": "vless",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "dKRk8uY7Uau6bz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "c1 tls_h2 grpc CDN trojan \u00a7 443 4",
-            "type": "trojan",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "f0yhq5kRz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "c1 tls_h2 grpc CDN vmess \u00a7 443 4",
-            "type": "vmess",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "3wVDrZYnkwx5z3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "c1 tls WS CDN vless \u00a7 443 4",
-            "type": "vless",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls WS CDN trojan \u00a7 443 4",
-            "type": "trojan",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/f0yhq5kRMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls WS CDN vmess \u00a7 443 4",
-            "type": "vmess",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls httpupgrade CDN vless \u00a7 443 4",
-            "type": "vless",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/dKRk8uY7Uau6bn1gtnEzw",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls httpupgrade CDN vmess \u00a7 443 4",
-            "type": "vmess",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/3wVDrZYnkwx5n1gtnEzw",
-                "headers": {
-                    "Host": "mixinc.maintaincourse.ir"
-                }
-            }
-        },
-        {
-            "tag": "c1 tls grpc CDN vless \u00a7 443 4",
-            "type": "vless",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "dKRk8uY7Uau6bz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "c1 tls grpc CDN trojan \u00a7 443 4",
-            "type": "trojan",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "f0yhq5kRz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "c1 tls grpc CDN vmess \u00a7 443 4",
-            "type": "vmess",
-            "server": "mixinc.maintaincourse.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixinc.maintaincourse.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "3wVDrZYnkwx5z3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d2 tls_h2 WS direct vless \u00a7 443 5",
-            "type": "vless",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls_h2 WS direct trojan \u00a7 443 5",
-            "type": "trojan",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/f0yhq5kRMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls_h2 WS direct vmess \u00a7 443 5",
-            "type": "vmess",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls_h2 httpupgrade direct vless \u00a7 443 5",
-            "type": "vless",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/dKRk8uY7Uau6bn1gtnEzw",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls_h2 httpupgrade direct vmess \u00a7 443 5",
-            "type": "vmess",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/3wVDrZYnkwx5n1gtnEzw",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls_h2 grpc direct vless \u00a7 443 5",
-            "type": "vless",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "dKRk8uY7Uau6bz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d2 tls_h2 grpc direct trojan \u00a7 443 5",
-            "type": "trojan",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "f0yhq5kRz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d2 tls_h2 grpc direct vmess \u00a7 443 5",
-            "type": "vmess",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "3wVDrZYnkwx5z3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d2 tls WS direct vless \u00a7 443 5",
-            "type": "vless",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls WS direct trojan \u00a7 443 5",
-            "type": "trojan",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/f0yhq5kRMSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls WS direct vmess \u00a7 443 5",
-            "type": "vmess",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "ws",
-                "path": "/3wVDrZYnkwx5MSAHd9UQSrg",
-                "early_data_header_name": "Sec-WebSocket-Protocol",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls httpupgrade direct vless \u00a7 443 5",
-            "type": "vless",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/dKRk8uY7Uau6bn1gtnEzw",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls httpupgrade direct vmess \u00a7 443 5",
-            "type": "vmess",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "http/1.1"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "httpupgrade",
-                "path": "/3wVDrZYnkwx5n1gtnEzw",
-                "headers": {
-                    "Host": "mixind.maintainhydraulic.ir"
-                }
-            }
-        },
-        {
-            "tag": "d2 tls grpc direct vless \u00a7 443 5",
-            "type": "vless",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "dKRk8uY7Uau6bz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d2 tls grpc direct trojan \u00a7 443 5",
-            "type": "trojan",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "f0yhq5kRz3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d2 tls grpc direct vmess \u00a7 443 5",
-            "type": "vmess",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 443,
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "insecure": false,
-                "alpn": [
-                    "h2"
-                ]
-            },
-            "alter_id": 0,
-            "security": "auto",
-            "packet_encoding": "xudp",
-            "transport": {
-                "type": "grpc",
-                "service_name": "3wVDrZYnkwx5z3nyHAbn",
-                "idle_timeout": "115s",
-                "ping_timeout": "15s"
-            }
-        },
-        {
-            "tag": "d2 TUIC \u00a7 53934 5",
-            "type": "tuic",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 53934,
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "congestion_control": "cubic",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": true,
-            "heartbeat": "10s",
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6"
-        },
-        {
-            "tag": "d2 Hysteria2 \u00a7 40650 5",
-            "type": "hysteria2",
-            "server": "mixind.maintainhydraulic.ir",
-            "server_port": 40650,
-            "tls": {
-                "enabled": true,
-                "server_name": "mixind.maintainhydraulic.ir",
-                "insecure": false,
-                "alpn": [
-                    "h3"
-                ]
-            },
-            "up_mbps": null,
-            "down_mbps": null,
-            "obfs": {
-                "type": "salamander",
-                "password": "zkH8BZbQmhOkAug"
-            },
-            "password": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6"
-        }
+  "log": {
+    "level": "warn",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "address": "udp://1.1.1.1",
+        "address_resolver": "dns-direct",
+        "detour": "✅ Selector",
+        "tag": "dns-remote"
+      },
+      {
+        "address": "8.8.8.8",
+        "detour": "direct",
+        "tag": "dns-direct"
+      },
+      {
+        "address": "rcode://success",
+        "tag": "dns-block"
+      }
     ],
-    "route": {
-        "auto_detect_interface": true,
-        "override_android_vpn": true,
-        "final": "Select",
+    "rules": [
+      {
+        "domain": [
+          "seyed.maintainhydraulic.ir",
+          "www.speedtest.net"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain": [
+          "raw.githubusercontent.com",
+          "time.apple.com"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns-direct"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns-remote"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-ir"
+          },
+          {
+            "rule_set": "geoip-ir"
+          }
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-cn"
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-category-ru"
+          },
+          {
+            "rule_set": "geoip-ru"
+          }
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "disable_cache": true,
         "rule_set": [
-            {
-                "tag": "geosite-ir",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs",
-                "download_detour": "bypass"
-            },
-            {
-                "tag": "geoip-ir",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs",
-                "download_detour": "bypass"
-            }
+          "geosite-malware",
+          "geosite-phishing",
+          "geosite-cryptominers",
+          "geosite-category-ads-all"
         ],
-        "rules": [
-            {
-                "outbound": "dns-out",
-                "port": [
-                    53
-                ]
-            },
-            {
-                "inbound": [
-                    "dns-in"
-                ],
-                "outbound": "dns-out"
-            },
-            {
-                "domain_suffix": [
-                    "ir"
-                ],
-                "outbound": "bypass"
-            },
-            {
-                "rule_set": "geoip-ir",
-                "outbound": "bypass"
-            },
-            {
-                "rule_set": "geosite-ir",
-                "outbound": "bypass"
-            },
-            {
-                "protocol": "quic",
-                "port": [
-                    443
-                ],
-                "outbound": "block"
-            },
-            {
-                "ip_cidr": [
-                    "224.0.0.0/3",
-                    "ff00::/8"
-                ],
-                "outbound": "block",
-                "source_ip_cidr": [
-                    "224.0.0.0/3",
-                    "ff00::/8"
-                ]
-            }
-        ]
+        "server": "dns-block"
+      }
+    ],
+    "independent_cache": true,
+    "strategy": "ipv4_only"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "address": [
+        "172.18.0.1/28",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "mixed",
+      "endpoint_independent_nat": true,
+      "sniff": true,
+      "sniff_override_destination": true
     },
-    "experimental": {
-        "clash_api": {
-            "external_controller": "127.0.0.1:9090",
-            "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip"
-        },
-        "cache_file": {
-            "enabled": true,
-            "path": "cache.db",
-            "cache_id": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
-            "store_fakeip": true
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 2080,
+      "sniff": true,
+      "sniff_override_destination": false
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "✅ Selector",
+      "outbounds": [
+        "💦 Best Ping 💥",
+        "💦 1 - VLESS - Domain : 443"
+      ]
+    },
+    {
+      "type": "vless",
+      "server": "mixin.kacharhydraulic.ir",
+      "server_port": 443,
+      "domain_strategy": "ipv4_only",
+      "uuid": "",
+      "tls": {
+        "alpn": [
+          "h2"
+        ],
+        "enabled": true,
+        "insecure": true,
+        "server_name": "mixin.kacharhydraulic.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
-    },
-    "dns": {
-        "servers": [
-            {
-                "address": "tcp://1.1.1.1",
-                "address_resolver": "dns-local",
-                "strategy": "prefer_ipv4",
-                "tag": "dns-remote",
-                "detour": "Select"
-            },
-            {
-                "address": "1.1.1.1",
-                "detour": "direct",
-                "tag": "dns-local"
-            },
-            {
-                "address": "rcode://success",
-                "tag": "dns-block"
-            }
-        ],
-        "rules": [
-            {
-                "domain": [
-                    "github.com",
-                    "githubusercontent.com",
-                    "raw.githubusercontent.com",
-                    "1.1.1.1",
-                    "api.github.com",
-                    "mixin.kacharhydraulic.ir",
-                    "mixinc.maintaincourse.ir",
-                    "mixind.maintainhydraulic.ir"
-                ],
-                "server": "dns-local"
-            },
-            {
-                "domain_suffix": [
-                    "ir"
-                ],
-                "server": "dns-local"
-            },
-            {
-                "outbound": "direct",
-                "server": "dns-local"
-            }
-        ],
-        "final": "dns-remote",
-        "reverse_mapping": true,
-        "strategy": "prefer_ipv4",
-        "independent_cache": true
-    },
-    "inbounds": [
-        {
-            "listen": "127.0.0.1",
-            "listen_port": 6450,
-            "override_address": "8.8.8.8",
-            "override_port": 53,
-            "tag": "dns-in",
-            "type": "direct"
+      },
+      "transport": {
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "headers": {
+          "Host": "mixin.kacharhydraulic.ir"
         },
-        {
-            "type": "tun",
-            "tag": "tun-in",
-            "domain_strategy": "prefer_ipv4",
-            "interface_name": "tun0",
-            "address": [
-                "172.19.0.1/30"
-            ],
-            "mtu": 9000,
-            "auto_route": true,
-            "strict_route": true,
-            "stack": "system",
-            "endpoint_independent_nat": true,
-            "sniff": true,
-            "sniff_override_destination": false
-        },
-        {
-            "domain_strategy": "prefer_ipv4",
-            "listen": "127.0.0.1",
-            "listen_port": 2334,
-            "sniff": true,
-            "sniff_override_destination": false,
-            "tag": "mixed-in",
-            "type": "mixed"
-        }
-    ]
+        "path": "/dKRk8uY7Uau6bMSAHd9UQSrg",
+        "type": "ws"
+      },
+      "tag": "💦 1 - VLESS - Domain : 443"
+          },
+    {
+      "type": "urltest",
+      "tag": "💦 Best Ping 💥",
+      "outbounds": [
+        "💦 1 - VLESS - Domain : 443"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "30s"
+    },
+    {
+      "type": "direct",
+      "domain_strategy": "ipv4_only",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "✅ Selector"
+      },
+      {
+        "rule_set": [
+          "geosite-ir",
+          "geosite-cn",
+          "geosite-category-ru"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geoip-cn",
+          "geoip-ru"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geosite-malware",
+          "geosite-phishing",
+          "geosite-cryptominers",
+          "geosite-category-ads-all"
+        ],
+        "outbound": "block"
+      },
+      {
+        "rule_set": [
+          "geoip-malware",
+          "geoip-phishing"
+        ],
+        "outbound": "block"
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "protocol": "quic",
+        "outbound": "block"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geosite-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ru",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ru.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-ru",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ru.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-malware",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-malware",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-phishing",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-phishing",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cryptominers",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ads-all.srs",
+        "download_detour": "direct"
+      }
+    ],
+    "auto_detect_interface": true,
+    "override_android_vpn": true,
+    "final": "✅ Selector"
+  },
+  "ntp": {
+    "enabled": true,
+    "server": "time.apple.com",
+    "server_port": 123,
+    "detour": "direct",
+    "interval": "30m"
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "ui",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "direct",
+      "default_mode": "Rule"
+    }
+  }
 }

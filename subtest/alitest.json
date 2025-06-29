@@ -280,7 +280,7 @@
       "uuid": "4be0d601-a49b-46ef-9fc1-2a7f0c3c23b6",
       "tls": {
         "alpn": [
-          "h2"
+          "http/1.1"
         ],
         "enabled": true,
         "insecure": true,

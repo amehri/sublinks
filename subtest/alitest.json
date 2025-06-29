@@ -717,18 +717,6 @@
                     "Host": "mixinc.maintaincourse.ir"
                 }
             }
-              "tag": "fragment",
-            "protocol": "blackhole",
-            "settings": {
-            "domainStrategy": "AsIs",
-            "fragment": {
-              "packets": "tlshello",
-              "length": "10-20",
-              "interval": "10-20"
-                         }
-                          }
-     
-          
         },
         {
             "tag": "c1 tls_h2 WS CDN trojan \u00a7 443 4",

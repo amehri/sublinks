@@ -200,14 +200,6 @@
             "show": false
           }
         }
-      }
-        },
-        "streamSettings": {
-          "sockopt": {
-            "tcpNoDelay": true,
-            "tcpKeepAliveIdle": 100
-          }
-        }
       },
       {
         "tag": "direct",
@@ -351,8 +343,8 @@
             }
           }
         }
-      }
-        },
+      },
+      {
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -496,9 +488,9 @@
             }
           }
         }
-      }
-        },
-        "streamSettings": {
+      },
+      {
+         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -646,9 +638,9 @@
             }
           }
         }
-      }
-        },
-        "streamSettings": {
+      },
+      {
+          "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -795,9 +787,9 @@
             "host": "mixin.kacharhydraulic.ir"
           }
         }
-      }
-        },
-        "streamSettings": {
+      },
+      {
+          "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -943,9 +935,9 @@
             "host": "mixin.kacharhydraulic.ir"
           }
         }
-      }
-        },
-        "streamSettings": {
+      },
+      {
+          "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -1093,9 +1085,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
-        "streamSettings": {
+      },
+      {
+          "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -1237,9 +1229,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
-        "streamSettings": {
+      },
+      {
+          "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -1386,9 +1378,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
-        "streamSettings": {
+      },
+      {
+          "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
             "tcpKeepAliveIdle": 100
@@ -1537,8 +1529,9 @@
             }
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -1682,8 +1675,9 @@
             }
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -1832,8 +1826,9 @@
             }
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -1981,8 +1976,9 @@
             "host": "mixin.kacharhydraulic.ir"
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2129,8 +2125,9 @@
             "host": "mixin.kacharhydraulic.ir"
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2279,8 +2276,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2423,8 +2421,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2572,8 +2571,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2705,8 +2705,9 @@
           "security": "none",
           "network": "tcp"
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2838,8 +2839,9 @@
           "security": "tls",
           "network": "tcp"
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -2967,8 +2969,9 @@
             ]
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -3096,8 +3099,9 @@
             ]
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -5875,8 +5879,9 @@
             }
           }
         }
-      }
-        },
+      },
+      {
+       
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6020,8 +6025,9 @@
             }
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6170,8 +6176,9 @@
             }
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6319,8 +6326,9 @@
             "host": "mixind.maintainhydraulic.ir"
           }
         }
-      }
-        },
+      },
+      {
+       
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6467,8 +6475,9 @@
             "host": "mixind.maintainhydraulic.ir"
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6617,8 +6626,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
+      },
+      {
+       
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6761,8 +6771,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
+      },
+      {
+       
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -6910,8 +6921,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7061,8 +7073,9 @@
             }
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7206,8 +7219,9 @@
             }
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7356,8 +7370,9 @@
             }
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7505,8 +7520,9 @@
             "host": "mixind.maintainhydraulic.ir"
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7653,8 +7669,9 @@
             "host": "mixind.maintainhydraulic.ir"
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7803,8 +7820,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -7947,8 +7965,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
+      },
+      {
+       
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -8096,8 +8115,9 @@
             "health_check_timeout": 20
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -8225,8 +8245,9 @@
             ]
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
@@ -8354,8 +8375,9 @@
             ]
           }
         }
-      }
-        },
+      },
+      {
+        
         "streamSettings": {
           "sockopt": {
             "tcpNoDelay": true,
